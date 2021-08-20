@@ -10,8 +10,7 @@
 using namespace std;
 
 int n;
-// 부모 노드가 자식 노드 index / 2라는 식을 지키기 위해 count는 1부터 시작
-int heap_count = 1;
+int heap_count = 0;
 int heap[100001];
 
 void heap_push(int data) {
