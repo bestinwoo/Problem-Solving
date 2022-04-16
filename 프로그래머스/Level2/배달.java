@@ -15,7 +15,7 @@ class Solution {
             if (distance[vertex] < weight) {
                 continue;
             }
-            for (int i = 0; i < edgeList[vertex].size(); i++) { // 해당 도시와 연결되 있는 도시들 탐색
+            for (int i = 0; i < edgeList[vertex].size(); i++) { // 해당 도시와 연결되어 있는 도시들 탐색
                 int vertex2 = edgeList[vertex].get(i).vertex;
                 int weight2 = edgeList[vertex].get(i).weight + weight;
                 if (distance[vertex2] > weight2) { // 최단경로 세팅
